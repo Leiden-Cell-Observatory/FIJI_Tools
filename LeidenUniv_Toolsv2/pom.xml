@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>28.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>LeidenUniv.Tools</groupId>
+	<artifactId>LeidenUniv_Tools</artifactId>
+	<version>1.2.2</version>
+
+	<name>LeidenUniv/Tools/Special threshold</name>
+	<description>A Maven project implementing an ImageJ 1.x plugin.</description>
+	<url>https://www.universiteitleiden.nl/</url>
+	<inceptionYear>2019</inceptionYear>
+	<organization>
+		<name>Leiden University</name>
+		<url>https://www.universiteitleiden.nl/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>Willemsejj</id>
+			<name>Joost Willemse</name>
+			<url>https://imagej.net/User:Willemsejj</url>
+			<roles>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Joost Willemse</name>
+			<url>https://imagej.net/User:Willemsejj</url>
+			<roles><role>founder</role></roles>
+			<properties><id>dscho</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagej/example-legacy-plugin</connection>
+		<developerConnection>scm:git:git@github.com:imagej/example-legacy-plugin</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagej/example-legacy-plugin</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/example-legacy-plugin/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>LeidenUniv.Tools</package-name>
+		<main-class>LeidenUniv.Tools.Process_Pixels</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
+	</properties>
+
+	<dependencies>
+	<dependency>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>28.0.0</version>
+		<type>pom</type>
+	</dependency>
+
+	<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>pom-imagej</artifactId>
+			<version>17.0.0</version>
+			<type>pom</type>
+		</dependency>
+
+	<dependency>
+		<groupId>LeidenUnivFish</groupId>
+		<artifactId>LeidenUnivFish</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	</dependencies>
+</project>
