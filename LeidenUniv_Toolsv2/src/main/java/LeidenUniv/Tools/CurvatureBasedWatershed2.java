@@ -211,7 +211,7 @@ public class CurvatureBasedWatershed2 implements PlugIn {
 	             // Check if the points in the refined path are connected properly.
 	                // We are checking ROI 27 because the path looks clumped in the image,
 	                // even though Dijkstra reduces the number of points from 25 to 18.
-	                if (i == 26 && !refinedPath.isEmpty()) {
+	                if (/*i == 26 && */!refinedPath.isEmpty()) {
 
 	                    // First check the path in the order returned by Dijkstra.
 	                    // The distance between consecutive points should be 1 or 1.414
